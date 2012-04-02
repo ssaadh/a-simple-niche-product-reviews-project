@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%= page_title %> - <%= site_title %></title>
+    <meta name="description" content="<%= site_description %>">
+    <meta name="author" content="<%= site_author %>">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+      .sidebar-nav {
+        padding: 9px 0;
+      }
+    </style>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+    
+    <link href="assets/css/review_site.css" rel="stylesheet">
+    
+  </head>
+
+  <body>
+
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <span class="brand" href="#"><%= site_title %>:</span>
+          <span class="slogan"><%= site_slogan %></span>
+          <div class="nav-collapse">
+            <%= partial :navigation %>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="hero-unit">
+            <div id="introduction">
+              <div id="image1" style="float: left; padding-right: 10px"><img src="assets/img/<%= introduction_image %>"  border="0" width="393" height="297" /></div>
+              <h1><%= page_title %> - The Proper Way!</h1>        
+              <%= site_introduction %>
+            </div>
+            <hr />
+            <div id="review_1">
+              <div id="image1" style="float: left; padding-right: 10px"><img src="assets/img/<%= review_1_image %>" /></div>
+              <h3><a href="<%= review_1_affiliate_link %>"><%= review_1_product_name %></a></h3>
+              <span class="stars"><img src="assets/img/review-star.png" class="star" /><img src="assets/img/review-star.png" class="star" /><img src="assets/img/review-star.png" class="star" /><img src="assets/img/review-star.png" class="star" /><img src="assets/img/review-star.png" class="star" /></span>
+              
+              
+              <p>Quality: <%= quality %> | Support: <%= support %> | Recommendation: <%= recommendation %></p>
+            </div>
+            <div class="seperator"><i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i> <i class="icon-heart"></i></div>
+            <div id="review_2">
+            </div>
+            <div class="seperator"><i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i> <i class="icon-heart icon-white"></i></div>
+            <div id="review_3">
+            </div>
+            <hr />
+            <div id="top_product">
+            </div>
+          </div>
+        </div><!--/span-->
+      </div><!--/row-->
+
+      <hr />
+
+      <%= partial :footer %>
+
+    </div><!--/.fluid-container-->
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery-1.7.1.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+  </body>
+</html>

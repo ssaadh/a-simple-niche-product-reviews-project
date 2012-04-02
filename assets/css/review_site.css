@@ -1,0 +1,24 @@
+.seperator {
+  
+}
+
+h3 {
+
+  display: inline;
+
+}
+
+.star {
+  
+  width: 21px; 
+  height: 20px;
+  padding: 1px;
+  
+}
+
+.stars {
+  
+  float: right;
+  margin-right: 20px;
+  
+}
