@@ -1,5 +1,9 @@
 .seperator {
   
+  clear: both;
+  text-align: center;
+  padding: 10px;
+  
 }
 
 h3 {
@@ -19,6 +23,32 @@ h3 {
 .stars {
   
   float: right;
+  
+}
+
+.rating {
+  color: #117f1d;
+  font-weight: bold;
+}
+
+.support {
+  
+}
+
+.recommendation {
+  
+  
+}
+
+.learn_more {
+
+  float: right;
+  
+}
+
+.review {
+  
+  margin-left: 20px;
   margin-right: 20px;
   
 }

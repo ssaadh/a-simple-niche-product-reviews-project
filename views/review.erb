@@ -1,3 +1,14 @@
-<div id="image1" style="float: left; padding-right: 10px"><img src="assets/img/<%= review_image %>.jpg" /></div>
-
-<p>Quality: <%= quality %> | Support: <%= support %> | Recommendation: <%= recommendation %></p>
+<div class="review">
+  <div id="image1" style="float: left; padding-right: 10px"><img src="assets/img/<%= image %>" /></div>
+  <h3><a href="<%= affiliate_link %>"><%= product_name %></a></h3>              
+  <span class="stars">
+    <% i = 0
+      while i < score do %>
+    <img src="assets/img/review-star.png" class="star" />
+    <% end %>
+  </span>
+  
+  <p><%= paragraph %></p>
+  <p><span class="rating">Quality:</span> <%= quality %> | <span class="rating">Support:</span> <%= support %> | <span class="rating">Recommendation:</span> <%= recommendation %></p>
+  <div class="learn_more"><p><a class="btn btn-primary" href="<%= review_1_affiliate_link %>">Click here to learn more!</a></p></div>
+</div>
