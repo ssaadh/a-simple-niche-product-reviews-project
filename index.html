@@ -63,7 +63,7 @@
               <h1><%= page_title %> - The Proper Way!</h1>        
               <%= site_introduction %>
             </div>
-            <hr />
+            <hr class="divider" />
             
             <%= partial :review %>
             
@@ -76,16 +76,14 @@
             
             <%= partial :review %>
             
-            <hr />
-            <div id="top_product">            
+            <hr class="divider" />
             
-            </div>
+            <%= partial :top_product %>
+            
           </div>
         </div><!--/span-->
       </div><!--/row-->
-
-      <hr />
-
+      
       <%= partial :footer %>
 
     </div><!--/.fluid-container-->

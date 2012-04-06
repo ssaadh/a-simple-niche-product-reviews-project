@@ -1,0 +1,15 @@
+<div id="top_product">                        
+  <h3>Why <%= site_title %> picked <a href="<%= product_affiliate_link %>"><%= product_name %></a> as the top rated product:</h3>
+  <br />
+  <div id="top_product_image"><img src="<%= product_image %>" /></div>
+  <div id="features">
+    <p><%= product_name %> offers proven value that places it above other products. Specifically, it:</p>
+    <div id="feature_list">
+      <% product_features.each_line do |line| %>
+      <i class="icon-ok"></i> <%= line %> <br />
+      <% end %>
+    </div>                            
+    <p style="font-weight: bold;"><a href="<%= product_affiliate_link %>">Click here to <%= product_push %></a></p>
+    <p><%= product_finale %></p>
+  </div>            
+</div>
